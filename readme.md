@@ -110,6 +110,7 @@
 --------------
 
 ## Rollback
+rollback work on react-native release version `react-native run-android --variant=release`
 + rollback lasted release
     ```
     appcenter codepush rollback -a <ownerName>/<appName> <devName>
@@ -132,9 +133,11 @@
     ```
     > This command is irreversible, and therefore should not be used in a production deployment.
 
+# Setup React Native Release 
+[Generating Signed APK from https://facebook.github.io/react-native/docs/signed-apk-android.html](https://facebook.github.io/react-native/docs/signed-apk-android.html)
 
 
-# Fix Bug ReactNative@0.56.0
+# Fix Bug React Native@0.56.0
 ```
 yarn remove react-native babel-preset-react-native
 yarn add react-native@0.55.4
